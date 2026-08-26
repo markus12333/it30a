@@ -59,3 +59,21 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2026-08-19 13:23:56
+  CREATE TABLE borrow(
+    borrow_id int AUTO_INCREMENT PRIMARY KEY,
+    student _id INT NOT NULL,
+    book_id INT NOT NULL,
+    borrow_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    borrow_return_date TIMESTAMP NULL DEFAULT NULL,
+    CONSTRAINT fk_student_borrow FOREIGN KEY (student_id)
+    REFERENCES students(student_id),
+    
+    CONSTRAINT fk_borrow_book FOREIGN KEY (book_id)
+    REFERENCES books(book_id)
+
+
+    INSERT INTO borrow (student_id,book_id)VALUES
+(1,2),
+(2,1),
+(3,3);
+  )
