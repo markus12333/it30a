@@ -9,4 +9,6 @@ C:\Users\clair\OneDrive\Documents\it30a\backups
 VALUES(values);
 UTILITY commands
 \! cls 
-mysqldump -u root -p --databases library_db > E:\Dev\it30a-BONGCAO\backups\08182026_library_db.sql 
+mysqldump -u root -p --databases library_db > C:\Users\clair\OneDrive\Documents\it30a\backups\08182026_library_db.sql 
+
+mysqldump -u root -p --databases library_db > C:\Users\clair\OneDrive\Documents\it30a\backups\%date:~-4%_%date:~4,2%_%date:~7,2%_%time:~0,2%_%time:~3,2%_%time:~6,2%_library_db.sql
