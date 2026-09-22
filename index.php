@@ -45,7 +45,7 @@ if($section==='students'){
 //Create Student
 if ($section==='students' && $action==='create'){
 
-if($_SERVER['REQUEST_METHOD'] === 'POST')
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $firstName =trim($_POST['student_first_name']?? '');
       $lastName =trim($_POST['student_last_name']?? '');
@@ -75,7 +75,7 @@ header("Location: index.php?section=students");
 exit;
     }
 }
-
+}
 
 
 
