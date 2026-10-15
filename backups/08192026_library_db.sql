@@ -77,3 +77,4 @@ UNLOCK TABLES;
 (2,1),
 (3,3);
   )
+  --commit
